@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Documentation</display-name>
+ <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.svg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>req</servlet-name>
+  		<servlet-class>net.javaguides.usermanagement.web.Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>req</servlet-name>
+        <url-pattern>/reqServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+<servlet>
+    <servlet-name>DemandeEtudiant</servlet-name>   
+    <servlet-class>net.javaguides.usermanagement.web.DemandeEtudiant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemandeEtudiant</servlet-name>
+    <url-pattern>/DemandeEtudiant</url-pattern>
+  </servlet-mapping>
+ 
+ 
+ <servlet>
+    <servlet-name>DemandeProfesseur</servlet-name>   
+    <servlet-class>net.javaguides.usermanagement.web.DemandeProfesseur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemandeProfesseur</servlet-name>
+    <url-pattern>/DemandeProfesseur</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DocumentDemanderProfesseur</servlet-name>   
+    <servlet-class>net.javaguides.usermanagement.web.DocumentDemanderProfesseur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DocumentDemanderProfesseur</servlet-name>
+    <url-pattern>/DocumentDemanderProfesseur</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DocumentDemanderEtudiant</servlet-name>   
+    <servlet-class>net.javaguides.usermanagement.web.DocumentDemanderEtudiant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DocumentDemanderEtudiant</servlet-name>
+    <url-pattern>/DocumentDemanderEtudiant</url-pattern>
+  </servlet-mapping>
+</web-app>
